@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости ремонта | Автосервис PitStop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="calc-page">
+
+    <!-- ШАПКА САЙТА -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Pit<span>Stop</span></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="price.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                <a href="calc.html" class="btn btn-outline">Запись на СТО</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- СЕКЦИЯ СТИЛЬНОГО КАЛЬКУЛЯТОРА -->
+    <section class="premium-calc">
+        <div class="container">
+
+            <div class="section-header">
+                <span class="section-subtitle">Конфигуратор сметы</span>
+                <h1 class="section-title">Умный расчет стоимости</h1>
+                <p class="section-description">Выберите необходимые услуги кликом по карточкам. Система автоматически сформирует предварительный чек и подготовит мастера к вашему визиту.</p>
+            </div>
+
+            <div class="modern-calc-layout">
+
+                <!-- ЛЕВАЯ ЧАСТЬ: ИНТЕРАКТИВНЫЕ КАРТОЧКИ-ЧЕКБОКСЫ -->
+                <div class="calc-interactive-zone">
+                    <h3 class="block-glow-title">1. Необходимые работы</h3>
+
+                    <div class="tiles-grid">
+                        <!-- Карточка 1 -->
+                        <div class="tile-card" onclick="toggleTile(this)">
+                            <input type="checkbox" class="tile-checkbox" value="1200" data-name="Диагностика">
+                            <div class="tile-icon">💻</div>
+                            <div class="tile-info">
+                                <span class="tile-title">Компьютерная диагностика</span>
+                                <span class="tile-price-tag">1 200 ₽</span>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="tile-card" onclick="toggleTile(this)">
+                            <input type="checkbox" class="tile-checkbox" value="800" data-name="Ходовая">
+                            <div class="tile-icon">🔩</div>
+                            <div class="tile-info">
+                                <span class="tile-title">Ремонт ходовой части</span>
+                                <span class="tile-price-tag">800 ₽</span>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="tile-card" onclick="toggleTile(this)">
+                            <input type="checkbox" class="tile-checkbox" value="2500" data-name="Регулярное ТО">
+                            <div class="tile-icon">🛢️</div>
+                            <div class="tile-info">
+                                <span class="tile-title">Регулярное ТО (Масло)</span>
+                                <span class="tile-price-tag">2 500 ₽</span>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 4 -->
+                        <div class="tile-card" onclick="toggleTile(this)">
+                            <input type="checkbox" class="tile-checkbox" value="900" data-name="Тормоза">
+                            <div class="tile-icon">🛑</div>
+                            <div class="tile-info">
+                                <span class="tile-title">Обслуживание тормозов</span>
+                                <span class="tile-price-tag">900 ₽</span>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 5 -->
+                        <div class="tile-card" onclick="toggleTile(this)">
+                            <input type="checkbox" class="tile-checkbox" value="4000" data-name="Ремонт ДВС">
+                            <div class="tile-icon">🔧</div>
+                            <div class="tile-info">
+                                <span class="tile-title">Ремонт ДВС и ГРМ</span>
+                                <span class="tile-price-tag">4 000 ₽</span>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 6 -->
+                        <div class="tile-card" onclick="toggleTile(this)">
+                            <input type="checkbox" class="tile-checkbox" value="1600" data-name="Шиномонтаж">
+                            <div class="tile-icon">🛞</div>
+                            <div class="tile-info">
+                                <span class="tile-title">Шиномонтаж и балансировка</span>
+                                <span class="tile-price-tag">1 600 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Форма контактов под плитками -->
+                    <h3 class="block-glow-title" style="margin-top: 50px;">2. Информация о владельце</h3>
+                    <div class="premium-form-box">
+                        <div class="form-input-row">
+                            <div class="field-box">
+                                <label>Марка и модель автомобиля</label>
+                                <input type="text" placeholder="Например: Kia Optima" required>
+                            </div>
+                            <div class="field-box">
+                                <label>Ваш номер телефона</label>
+                                <input type="tel" placeholder="+7 (999) 123-45-67" required>
+                            </div>
+                        </div>
+                        <div class="field-box" style="margin-top: 20px;">
+                            <label>Ваше имя</label>
+                            <input type="text" placeholder="Иван Иванович" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ПРАВАЯ ЧАСТЬ: НЕОНОВЫЙ ВИДЖЕТ ИТОГА -->
+                <div class="calc-sticky-sidebar">
+                    <div class="cyber-total-widget">
+                        <div class="widget-accent-bar"></div>
+                        <h3>Итоговый лист</h3>
+
+                        <div class="live-summary-list" id="summary-items">
+                            <p class="empty-note">Услуги не выбраны</p>
+                        </div>
+
+                        <div class="cyber-divider"></div>
+
+                        <div class="total-price-display">
+                            <span class="total-lbl">Сумма:</span>
+                            <span class="total-val" id="total-sum">0 ₽</span>
+                        </div>
+
+                        <button class="neon-order-btn">Оформить смету и записаться</button>
+                        <p class="guarantee-badge">🛡️ Гарантия на все работы 1 год по договору</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СКРИПТ ДЛЯ ИНТЕРАКТИВНОГО ПЕРЕСЧЕТА -->
+    <script>
+        function toggleTile(card) {
+            const checkbox = card.querySelector('.tile-checkbox');
+            checkbox.checked = !checkbox.checked;
+
+            if (checkbox.checked) {
+                card.classList.add('active');
+            } else {
+                card.classList.add('removing');
+                setTimeout(() => card.classList.remove('active', 'removing'), 150);
+            }
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('.tile-checkbox');
+            const summaryList = document.getElementById('summary-items');
+            const totalSumDisplay = document.getElementById('total-sum');
+
+            let total = 0;
+            let selectedItemsHTML = '';
+
+            checkboxes.forEach(box => {
+                if (box.checked) {
+                    total += parseInt(box.value);
+                    selectedItemsHTML += `
+                        <div class="summary-item-row">
+                            <span class="item-dot"></span>
+                            <span class="item-n">${box.getAttribute('data-name')}</span>
+                            <span class="item-v">${parseInt(box.value).toLocaleString()} ₽</span>
+                        </div>`;
+                }
+            });
+
+            if (total === 0) {
+                summaryList.innerHTML = '<p class="empty-note">Услуги не выбраны</p>';
+                totalSumDisplay.innerText = '0 ₽';
+            } else {
+                summaryList.innerHTML = selectedItemsHTML;
+                totalSumDisplay.innerText = 'от ' + total.toLocaleString() + ' ₽';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы клиентов | Автосервис PitStop</title>
+    <!-- Привязываем наш общий файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт Roboto -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="reviews-page">
+
+    <!-- ШАПКА САЙТА -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Pit<span>Stop</span></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="price.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                <a href="#appointment" class="btn btn-outline">Запись на СТО</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ОТДЕЛЬНАЯ СЕКЦИЯ ОТЗЫВОВ -->
+    <section class="reviews-section">
+        <div class="container">
+
+            <!-- Заголовок страницы -->
+            <div class="section-header" style="text-align: center; max-width: 700px; margin: 0 auto 50px auto;">
+                <span class="section-subtitle">Обратная связь</span>
+                <h1 class="section-title">Отзывы о автосервисе</h1>
+                <p class="section-description">Мы гордимся своей репутацией и открыто делимся мнениями наших клиентов. Каждый отзыв помогает нам становиться лучше.</p>
+            </div>
+
+            <!-- Блок общего рейтинга СТО -->
+            <div class="rating-overview-card">
+                <div class="rating-big-number">4.9</div>
+                <div class="rating-stars-info">
+                    <div class="stars-gold">⭐⭐⭐⭐⭐</div>
+                    <p>На основе более 450 оценок в Яндекс, Google и 2ГИС</p>
+                </div>
+                <a href="#appointment" class="btn btn-primary">Оставить свой отзыв</a>
+            </div>
+
+            <!-- Сетка отзывов -->
+            <div class="services-grid">
+
+                <!-- Отзыв 1 -->
+                <div class="service-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <h3 class="service-name" style="font-size: 18px; margin-bottom: 5px;">Качественный ремонт ГРМ</h3>
+                    <p class="service-text" style="font-style: italic;">
+                        "Приезжал на замену цепи ГРМ на Kia Optima. Мастера сделали всё за один день, запчасти были в наличии. Очень порадовало, что пустили в ремзону и всё показали. Рекомендую!"
+                    </p>
+                    <div class="service-footer" style="margin-top: auto;">
+                        <span class="review-author" style="font-weight: 700;">Артур М.</span>
+                        <span style="color: #666666; font-size: 13px;">Kia Optima (2017)</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="service-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <h3 class="service-name" style="font-size: 18px; margin-bottom: 5px;">Честный сервис без обмана</h3>
+                    <p class="service-text" style="font-style: italic;">
+                        "Делала тут компьютерную диагностику и ремонт подвески перед зимой. Цены честные, лишних услуг не навязывали, как это любят делать в других местах. Машина едет идеально."
+                    </p>
+                    <div class="service-footer" style="margin-top: auto;">
+                        <span class="review-author" style="font-weight: 700;">Елена К.</span>
+                        <span style="color: #666666; font-size: 13px;">Skoda Rapid (2019)</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="service-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <h3 class="service-name" style="font-size: 18px; margin-bottom: 5px;">Отличный техцентр для бизнеса</h3>
+                    <p class="service-text" style="font-style: italic;">
+                        "Постоянно обслуживаю здесь свой коммерческий фургон. Цены адекватные, работают быстро, за простой машины переживать не приходится. Мужики знают свое дело."
+                    </p>
+                    <div class="service-footer" style="margin-top: auto;">
+                        <span class="review-author" style="font-weight: 700;">Иван Николаевич</span>
+                        <span style="color: #666666; font-size: 13px;">Ford Transit (2015)</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 4 -->
+                <div class="service-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <h3 class="service-name" style="font-size: 18px; margin-bottom: 5px;">Быстрый шиномонтаж</h3>
+                    <p class="service-text" style="font-style: italic;">
+                        "Переобуваюсь здесь уже третий сезон подряд. Всё четко по записи, без очередей. Балансировку делают идеально, руль на скорости не бьет вообще. Спасибо за скорость!"
+                    </p>
+                    <div class="service-footer" style="margin-top: auto;">
+                        <span class="review-author" style="font-weight: 700;">Виталий Д.</span>
+                        <span style="color: #666666; font-size: 13px;">BMW X5 (2020)</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 5 -->
+                <div class="service-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <h3 class="service-name" style="font-size: 18px; margin-bottom: 5px;">Исправили чужие косяки</h3>
+                    <p class="service-text" style="font-style: italic;">
+                        "В другом сервисе приговорили половину подвески, приехал сюда перепроверить. Оказалось, нужно было поменять только стойки стабилизатора. Спасибо механикам за честность и сэкономленные деньги."
+                    </p>
+                    <div class="service-footer" style="margin-top: auto;">
+                        <span class="review-author" style="font-weight: 700;">Павел Р.</span>
+                        <span style="color: #666666; font-size: 13px;">Hyundai Creta (2018)</span>
+                    </div>
+                </div>
+
+                <!-- Отзыв 6 -->
+                <div class="service-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <h3 class="service-name" style="font-size: 18px; margin-bottom: 5px;">Профессиональное ТО</h3>
+                    <p class="service-text" style="font-style: italic;">
+                        "Делал комплексное ТО с заменой всех фильтров и масла. Мастер бесплатно проверил аккумулятор и тормозную жидкость прибором. Очень приятный и качественный подход к клиенту."
+                    </p>
+                    <div class="service-footer" style="margin-top: auto;">
+                        <span class="review-author" style="font-weight: 700;">Ольга С.</span>
+                        <span style="color: #666666; font-size: 13px;">Toyota RAV4 (2021)</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

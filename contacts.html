@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Автосервис PitStop</title>
+    <!-- Привязываем наш общий файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт Roboto -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="contacts-page">
+
+    <!-- ШАПКА САЙТА -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Pit<span>Stop</span></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="price.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                <a href="#appointment" class="btn btn-outline">Запись на СТО</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- СЕКЦИЯ КОНТАКТОВ -->
+    <section class="contacts-section">
+        <div class="container">
+
+            <!-- Заголовок страницы -->
+            <div class="section-header" style="text-align: left; margin-bottom: 50px; max-width: 100%;">
+                <span class="section-subtitle">Связь с нами</span>
+                <h1 class="section-title">Контакты автосервиса</h1>
+                <p class="section-description">Ждем вас на обслуживание ежедневно. Вы всегда можете связаться с руководством напрямую.</p>
+            </div>
+
+            <div class="contacts-wrapper">
+
+                <!-- ЛЕВАЯ ЧАСТЬ: ИНФОРМАЦИОННЫЕ БЛОКИ -->
+                <div class="contacts-info">
+
+                    <!-- Телефоны и Почта -->
+                    <div class="info-block-card">
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div class="info-text">
+                                <h4>Телефоны сервиса</h4>
+                                <p><a href="tel:+79991234567">+7 (999) 123-45-67</a> (Приемка)</p>
+                                <p><a href="tel:+79997654321">+7 (999) 765-43-21</a> (Отдел запчастей)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">✉️</span>
+                            <div class="info-text">
+                                <h4>Электронная почта</h4>
+                                <p><a href="mailto:info@pitstop-sto.ru">info@pitstop-sto.ru</a> (Общие вопросы)</p>
+                                <p><a href="mailto:parts@pitstop-sto.ru">parts@pitstop-sto.ru</a> (Для поставщиков)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div class="info-text">
+                                <h4>Наш адрес и график</h4>
+                                <p>г. Москва, ул. Автомобилистов, д. 24, стр. 2</p>
+                                <p style="color: #ff5500; font-weight: 700; margin-top: 5px;">Ежедневно: с 9:00 до 21:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Руководство и ФИО -->
+                    <h3 class="contacts-subheading">Личные контакты руководства</h3>
+
+                    <div class="management-grid">
+                        <!-- Руководитель 1 -->
+                        <div class="manager-card">
+                            <div class="manager-details">
+                                <span class="manager-role">Генеральный директор</span>
+                                <h4 class="manager-name">Смирнов Алексей Николаевич</h4>
+                                <p class="manager-email">✉️ <a href="mailto:ceo@pitstop-sto.ru">ceo@pitstop-sto.ru</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Руководитель 2 -->
+                        <div class="manager-card">
+                            <div class="manager-details">
+                                <span class="manager-role">Руководитель ремзоны / Мастер-приемщик</span>
+                                <h4 class="manager-name">Петровский Илья Владимирович</h4>
+                                <p class="manager-email">✉️ <a href="mailto:service@pitstop-sto.ru">service@pitstop-sto.ru</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ПРАВАЯ ЧАСТЬ: КАРТА ИЛИ КРАСИВАЯ ЗАГЛУШКА -->
+                <div class="contacts-map-container">
+                    <!-- Стильная темная заглушка под карту, имитирующая брутальный автосервис -->
+                    <div class="map-placeholder">
+                        <div class="map-overlay-content">
+                            <span class="map-logo">Pit<span>Stop</span></span>
+                            <p>Интерактивная карта проезда</p>
+                            <p class="map-subtext">Здесь вы сможете подключить Яндекс.Карты или Google Maps</p>
+                            <a href="https://yandex.ru" target="_blank" class="btn btn-primary" style="margin-top: 20px;">Открыть в навигаторе</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+  <!-- ПОДВАЛ САЙТА (FOOTER) -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Блок с логотипом и описанием -->
+            <div class="footer-info">
+                <a href="index.html" class="logo">Pit<span>Stop</span></a>
+                <p class="footer-desc">Профессиональный ремонт и техническое обслуживание автомобилей любых марок. Работаем для вас с 2018 года.</p>
+                <p class="copyright">© PitStop, 2026. Все права защищены.</p>
+            </div>
+
+            <!-- Блок ссылок (Карта сайта) -->
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="price.html">Услуги и цены</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Блок контактов -->
+            <div class="footer-contacts">
+                <h4>Контакты</h4>
+                <p>📍 г. Москва, ул. Автомобилистов, д. 24</p>
+                <p>📞 <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                <p>✉️ <a href="mailto:info@pitstop-sto.ru">info@pitstop-sto.ru</a></p>
+                <p class="footer-hours">🕒 Ежедневно: с 9:00 до 21:00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

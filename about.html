@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | Автосервис PitStop</title>
+    <!-- Привязываем наш общий файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем шрифт Roboto -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+
+    <!-- ШАПКА САЙТА -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Pit<span>Stop</span></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="price.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                <a href="#appointment" class="btn btn-outline">Запись на СТО</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ИСТОРИЯ И ОПИСАНИЕ СЕРВИСА -->
+    <section class="about-hero">
+        <div class="container about-hero-container">
+            <div class="about-hero-content">
+                <span class="section-subtitle">О компании</span>
+                <h1 class="about-main-title">Сеть автосервисов <span>PitStop</span></h1>
+                <p class="about-lead-text">
+                    Мы заботимся о вашем автомобиле с 2018 года. За это время мы выросли из небольшого гаражного бокса в современный технический центр, оснащенный дилерским оборудованием.
+                </p>
+                <p class="about-secondary-text">
+                    Наша главная цель — сломать стереотип о том, что поездка в автосервис связана с обманом и огромными тратами. В PitStop мы практикуем абсолютно открытый подход: вы можете лично присутствовать в ремзоне и общаться с мастером во время диагностики.
+                </p>
+            </div>
+            <div class="about-hero-image">
+                <!-- Качественная фоновая картинка современного автосервиса -->
+                <img src="https://unsplash.com" alt="Ремзона PitStop">
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА В ЦИФРАХ -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Лет успешной работы</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15 000+</div>
+                <div class="stat-label">Обслуженных авто</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Опытных механиков</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">365</div>
+                <div class="stat-label">Дней гарантии на работы</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- НАША КОМАНДА -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Эксперты</span>
+                <h2 class="section-title">Наши мастера</h2>
+                <p class="section-description">
+                    Все наши специалисты ежегодно проходят сертификацию и знают особенности ремонта любых марок автомобилей.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Мастер 1 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://unsplash.com" alt="Михаил">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="member-name">Михаил Ковалев</h3>
+                        <span class="member-role">Шеф-механик / Диагност</span>
+                        <p class="member-exp">Стаж: 11 лет</p>
+                    </div>
+                </div>
+
+                <!-- Мастер 2 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://unsplash.com" alt="Сергей">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="member-name">Сергей Попов</h3>
+                        <span class="member-role">Специалист по ходовой части</span>
+                        <p class="member-exp">Стаж: 7 лет</p>
+                    </div>
+                </div>
+
+                <!-- Мастер 3 -->
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://unsplash.com" alt="Дмитрий">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="member-name">Дмитрий Волков</h3>
+                        <span class="member-role">Моторист / Агрегатчик</span>
+                        <p class="member-exp">Стаж: 9 лет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- ПОДВАЛ САЙТА (FOOTER) -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Блок с логотипом и описанием -->
+            <div class="footer-info">
+                <a href="index.html" class="logo">Pit<span>Stop</span></a>
+                <p class="footer-desc">Профессиональный ремонт и техническое обслуживание автомобилей любых марок. Работаем для вас с 2018 года.</p>
+                <p class="copyright">© PitStop, 2026. Все права защищены.</p>
+            </div>
+
+            <!-- Блок ссылок (Карта сайта) -->
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="price.html">Услуги и цены</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Блок контактов -->
+            <div class="footer-contacts">
+                <h4>Контакты</h4>
+                <p>📍 г. Москва, ул. Автомобилистов, д. 24</p>
+                <p>📞 <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                <p>✉️ <a href="mailto:info@pitstop-sto.ru">info@pitstop-sto.ru</a></p>
+                <p class="footer-hours">🕒 Ежедневно: с 9:00 до 21:00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
