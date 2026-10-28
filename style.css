@@ -1215,95 +1215,116 @@ ul {
 /* ==========================================================================
    8. АДАПТИВНОСТЬ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА (RESPONSIVE)
    ========================================================================== */
+/* Планшеты и небольшие ноутбуки */
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
+/* Планшеты */
 @media (max-width: 992px) {
+    /* Меню скрывается — для телефона предусмотрите кнопку-бургер */
     .main-nav {
-        display: none; /* Скрываем стандартное меню на телефонах */
+        display: none;
     }
 
-    /* Адаптив для страницы "О нас" */
     .about-hero-container {
         flex-direction: column;
         text-align: center;
         gap: 40px;
     }
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
+
+    .stats-grid,
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    /* Адаптив для страницы "Контакты" */
+    .stats-grid {
+        gap: 32px;
+    }
+
     .contacts-wrapper {
         flex-direction: column;
-        gap: 40px;
+        gap: 32px;
     }
+
     .contacts-map-container {
-        width: 100%;
         position: static;
+        width: 100%;
     }
+
     .map-placeholder {
-        height: 350px;
+        height: 320px;
     }
 }
 
+/* Телефоны */
 @media (max-width: 768px) {
-    /* Адаптив главного экрана */
-    .hero-title {
+    .hero-title,
+    .section-title {
         font-size: 32px;
     }
+
     .hero-text {
         font-size: 16px;
     }
+
     .hero-actions {
         flex-direction: column;
         align-items: stretch;
         gap: 15px;
     }
+
     .btn-secondary {
         margin-left: 0;
     }
 
-    /* Адаптив сетки прайса */
     .services-grid {
-        grid-template-columns: 1fr; /* 1 колонка на экранах поменьше */
+        grid-template-columns: minmax(0, 1fr);
     }
-    .section-title {
-        font-size: 32px;
+
+    .map-placeholder {
+        height: 280px;
     }
 }
 
+/* Узкие телефоны */
 @media (max-width: 576px) {
-    /* Финальные микро-правки для самых узких экранов */
-    .stats-grid, .team-grid {
-        grid-template-columns: 1fr;
+    .stats-grid,
+    .team-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
     }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
+        gap: 24px;
     }
+
     .footer-desc {
         margin: 15px auto;
     }
+
     .about-main-title {
         font-size: 32px;
     }
+
     .info-block-card {
         padding: 25px 20px;
     }
+
     .info-item {
         flex-direction: column;
         gap: 12px;
     }
+
     .service-card {
         padding: 30px 20px;
     }
-}
+
+    .map-placeholder {
+        height: 240px;
+    }
+}}
